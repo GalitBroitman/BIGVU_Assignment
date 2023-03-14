@@ -1,0 +1,23 @@
+<div class="chapter-list">
+    <div class="list-container">
+        <div class="headline-container">
+            <h2 class="list-headline">{{ card?.headline }}</h2>
+            <div class="list-chapter-finished">
+                <img class="icon-finished" src="assets/icons/finished_video.png">
+                <h2 class="list-chapter-finished-text">
+                 {{countFinished()}}/{{card?.chapters.length}}
+                </h2> 
+             </div>
+        </div>
+        <div class="list-frame">
+            <a class="chapter" *ngFor="let chapter of card?.chapters;let i =index" (click)="chapterClicked(chapter, i)" [ngClass]=" {'selected-item': chapter.id === selectedItem}">
+                <img *ngIf="isChapterWatched(chapter.id); else elseBlock" class="icon-chapter" src="assets/icons/watched_video.png">
+                <ng-template #elseBlock>
+                    <img class="icon-chapter" src="assets/icons/player.png">
+                </ng-template>
+                <span class="chapter-name">{{i+1}}.{{chapter.title}}</span>
+                <div class="chapter-duration">{{convertTime(chapter.asset.resource.duration)}}</div>    
+            </a>
+        </div>
+    </div>
+  </div>

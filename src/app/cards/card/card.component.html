@@ -1,0 +1,25 @@
+<div class="item-container">
+    <h2 class="card-headline" [ngStyle]="{ 'color': cardColor }">{{ card.headline }}</h2>
+    <div class="card-frame">
+        <div class="card-chapter-counter">
+            <img class="icon-video" src="assets/icons/video.png">
+            <h2 class="card-chapter-counter-text">
+             {{chapterCounter}} videos
+            </h2> 
+         </div>
+        <img class="icon-card-corner" src="assets/icons/photo.svg" [style.fill]=" cardColor ">
+        <h3 class="card-frame-title">{{ card.description }}</h3>
+        <div class="summary-section">
+            <div class="card-frame-summary-list">
+                <div class="card-frame-summary" *ngFor="let summary of card.summary">
+                    <span class="card-frame-summary-dot" [ngStyle]="{ 'background-color': cardColor }"></span>
+                    <div class="card-frame-summary-title">{{summary}}</div>            
+                </div>
+            </div>
+            <a class="icon-card-container" href="#" [routerLink]="handleCardClick()">
+                <img class="icon-card" src="assets/icons/openCard.png">
+            </a>
+        </div>
+    </div>
+</div>
+

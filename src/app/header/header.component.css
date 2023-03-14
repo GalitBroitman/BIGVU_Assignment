@@ -1,0 +1,46 @@
+.header{
+    position: absolute;
+    width: 245px;
+    /* height: 24px; */
+    left: 42px;
+    top: 36px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    
+    /* BlueBlack/100 */
+    
+    color: #253658;
+}
+
+.paragraph{
+    position: absolute;
+    width: 500px;
+    /* height: 40px; */
+    left: 42px;
+    top: 72px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+
+    /* BlueBlack/100 */
+
+    color: #253658;
+}
+
+.card-list-container{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 42px;
+    margin-top: 144px;
+}

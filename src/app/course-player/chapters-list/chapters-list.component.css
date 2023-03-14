@@ -1,0 +1,132 @@
+.list-frame{
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    /* DeadBlue/60
+
+    #7B8DB1
+    */
+    border: 1px solid rgba(123, 141, 177, 0.6);
+    border-radius: 10px;
+}
+
+.list-headline{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    /* BlueBlack/100 */
+
+    color: #253658;
+}
+
+.list-container{
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px ;
+}
+.icon-chapter{
+    width: 20px;
+    height: 20px;
+}
+
+.chapter{
+    position: relative;
+    display: flex;
+    width: 491px;
+    height: 33px;
+    margin-left: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+.chapter-name{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    width: 423px;
+    /* identical to box height, or 20px */
+
+    font-feature-settings: 'calt' off;
+    
+    /* BlueBlack/100 */
+    
+    color: #253658;
+    margin-left: 8px;
+
+
+}
+
+.chapter-duration{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* identical to box height, or 20px */
+
+    text-align: right;
+    font-feature-settings: 'calt' off;
+    
+    /* BlueBlack/100 */
+    
+    color: #253658;
+    position: absolute;
+    right: 12px;
+}
+
+.selected-item{
+    /* Blue/8
+
+    #00ABFE
+    */
+    background: rgba(0, 171, 254, 0.08);
+}
+
+.list-chapter-finished{
+    width: 66px;
+    height: 32px;
+
+    /* Blue/8
+
+    #00ABFE
+    */
+    background: rgba(0, 171, 254, 0.08);
+    border-radius: 40px;
+    margin-left: 16px;
+    border-radius: 40px;
+    display: flex;
+}
+
+.headline-container{
+    display: flex;
+}
+
+.list-chapter-finished-text{
+    margin-left: 3px;
+    margin-top: 7px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    /* identical to box height, or 20px */
+
+    font-feature-settings: 'calt' off;
+
+    /* BlueBlack/100 */
+
+    color: #253658;
+}

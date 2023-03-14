@@ -1,0 +1,7 @@
+<div class="chapters-player-container">
+    <video #chapterVideo id="card-video" class="video-js vjs-default-skin vjs-playback-rate" controls preload="auto" (play)="onPlay()" (pause)="onPause()">
+        <source src="{{videoUrl}}" type="video/mp4" />
+    </video>
+    <app-chapters-list [card]="cardData" [selectedItem]="chapterData?.id" [courseId]="courseId"></app-chapters-list>
+</div>
+
